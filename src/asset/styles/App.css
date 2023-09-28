@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: vazir;
+  src: url("../fonts/Vazir-Bold.eot");
+  src: url("../fonts/Vazir-Bold.ttf") format("ttf"),
+    url("../fonts/Vazir-Bold.woff") format("woff"),
+    url("../fonts/Vazir-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: sahel;
+  src: url("../fonts/Sahel-Black.eot");
+  src: url("../fonts/Sahel-Black.ttf") format("ttf"),
+    url("../fonts/Sahel-Black.woff") format("woff"),
+    url("../fonts/Sahel-Black.woff2") format("woff2");
+}
+@font-face {
+  font-family: shabnam;
+  src: url("../fonts/Shabnam-Medium.eot");
+  src: url("../fonts/Shabnam-Medium.ttf") format("ttf"),
+    url("../fonts/Shabnam-Medium.woff") format("woff"),
+    url("../fonts/Shabnam-Medium.woff2") format("woff2");
+}
+.card-text {
+  font-family: vazir;
+}
+.container {
+  display: flex;
+  justify-content: start;
+}
+.dashboard-p {
+  font-family: shabnam;
+}
+main {
+  width: 100%;
+}
+.dashboard-header {
+  font-family: sahel;
+  color: orange;
+  font-weight: bolder;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+.sidebar {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.765),
+    rgb(154, 106, 62)
+  );
+  color: #fff;
+  height: 100vh;
+  width: 100px;
+  position: fixed;
+  font-family: shabnam;
+  right: 0%;
+  transition: all 0.5s;
+  box-shadow: rgb(255, 166, 1) 0px 5px 15px;
+}
+.final-card {
+  box-shadow: rgba(85, 172, 3, 0.644) 0px 5px 15px;
+  font-family: shabnam;
+}
+.top_section {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+
+.logo {
+  font-size: 15px;
+}
+.sabt-button {
+  font-family: sahel;
+  color: orange;
+}
+.bars {
+  display: flex;
+  font-size: 25px;
+}
+.link {
+  display: flex;
+  color: #fff;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+.link:hover {
+  background: orange;
+  color: #000;
+  transition: all 0.5s;
+}
+.active {
+  background: rgb(189, 124, 1);
+  color: #000;
+}
+.icon,
+.link_text {
+  font-size: 20px;
+}
+.error_page {
+  font-family: shabnam;
+  color: red;
+  font-size: 50px;
+}
+.product-list {
+  list-style: none;
+  display: flex;
+  font-family: vazir;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 20px;
+  margin-right: 170px;
+}
+.product-list :hover {
+  transform: scale(1.04);
+  transition: all 0.5s;
+}
+.product-list-detail {
+  list-style: none;
+  display: flex;
+  max-width: 500px;
+  padding: 0;
+  margin: 20px;
+  margin-right: 170px;
+}
+.product-item {
+  max-width: 300px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: rgba(227, 110, 8, 0.2) 0px 7px 29px 0px;
+}
+@media only screen and (max-width: 768px) {
+  .product-item {
+    width: 400px;
+  }
+  .selected-card {
+    width: 200px;
+  }
+}
+.product-image {
+  max-width: 250px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+.product-title {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.product-button {
+  cursor: pointer;
+  box-shadow: rgba(254, 140, 1, 0.695) 0px 5px 15px;
+}
+.product-button-confirm {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  box-shadow: rgba(22, 101, 6, 0.58) 0px 5px 15px;
+  width: 100px;
+  padding: 15px;
+}
+.detail-card {
+  box-shadow: rgba(0, 0, 0, 0.621) 0px 5px 15px;
+  font-family: shabnam;
+}
+.product-button-delete {
+  cursor: pointer;
+  box-shadow: rgba(254, 1, 1, 0.735) 0px 5px 15px;
+}
+.selected-card {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  border: none;
+}
+.pagination-btn {
+  padding: 10px;
+  border: none;
+  background-color: rgb(255, 120, 1);
+  border-radius: 10px;
+  transition: all 1.5s;
+}
+.pagination-btn:hover {
+  transition: all 0.5s;
+  font-weight: bolder;
+  border-radius: 50px;
+  transition: all 1s;
+}
+.pagination-num {
+  border: none;
+  background-color: white;
+  margin: 0px 10px 0px 10px;
+}
+
+.active-page {
+  color: rgb(255, 115, 0);
+  font-weight: bolder;
+  border: none;
+  width: 25px;
+  text-decoration: underline;
+}
+.dashboard-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  border-radius: 12px 2px 20px 5px;
+  font-family: vazir;
+  max-width: 600px;
+  box-shadow: rgba(63, 62, 60, 0.695) 0px 5px 15px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(228, 104, 9, 0.727),
+      rgba(255, 255, 255, 0.56)
+    ),
+    url(../images/Online_Shopping.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dashboard-empty h1 {
+  color: rgb(0, 0, 0);
+  letter-spacing: 5px;
+  font-family: vazir;
+  margin-bottom: 50px;
+}
+
+.list-loading {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-family: vazir;
+}
+.empty-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(
+      to top,
+      rgba(150, 150, 150, 0.778),
+      rgba(224, 132, 13, 0.92)
+    ),
+    url(../images/Online_Shopping.jpg);
+  box-shadow: rgba(254, 140, 1, 0.519) 0px 5px 15px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 15px;
+  font-family: vazir;
+}
+.empty-container h1 {
+  color: rgb(16, 16, 15);
+  font-family: sahel;
+}
+.form-container {
+  padding: 20px;
+  margin: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  font-family: shabnam;
+  background-image: linear-gradient(
+      to left,
+      rgba(150, 150, 150, 0.778),
+      rgba(255, 146, 3, 0.71)
+    ),
+    url(../images/Online_Shopping.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form-title {
+  font-family: sahel;
+  margin-bottom: 25px;
+  color: orange;
+}
